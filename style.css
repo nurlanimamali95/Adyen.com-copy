@@ -192,6 +192,54 @@ article li p {
   line-height: 30px;
 }
 
-.payment-bio h4{
+.payment-bio h4 {
+  color: #0abf53;
+}
+
+/* DATA SECTION */
+
+.data {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.data-green {
+  color: #0abf53;
+  font-size: 13px;
+  font-weight: 600px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: rgb(9 191 83 / 12%);
+  border-radius: 6px;
+  padding: 6px 12px;
+  padding-top: 6px;
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.data h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.data .data-info {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 40px;
+  padding-top: 24px;
+  padding-left: 30px;
+  color: #00112c;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.data span {
+  text-decoration: underline;
   color: #0abf53;
 }
