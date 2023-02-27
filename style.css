@@ -131,3 +131,9 @@ article h2 {
   margin-bottom: 48px;
   max-width: 58%;
 }
+
+article li h3, article li p, article li img{
+  margin: 15px;
+  margin-left: 0;
+  line-height: 25px;
+}
