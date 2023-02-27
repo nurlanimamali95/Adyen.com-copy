@@ -64,7 +64,7 @@ video {
   margin-left: 35px;
 }
 
-.bio h1{
+.bio h1 {
   text-align: left;
   width: 70%;
 }
@@ -132,8 +132,66 @@ article h2 {
   max-width: 58%;
 }
 
-article li h3, article li p, article li img{
+article li h3,
+article li p,
+article li img {
   margin: 15px;
   margin-left: 0;
   line-height: 25px;
+}
+
+article li p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* PAYMENT SECTION */
+
+.payment {
+  display: flex;
+  gap: 100px;
+}
+
+.payment-bio {
+  width: 472px;
+  height: 554px;
+  margin-top: 150px;
+  text-align: left;
+}
+
+.payment-bio h2,
+.payment-bio p,
+.payment-bio h4 {
+  padding: 15px;
+}
+
+.payment-bio h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.payment-bio .payment-green {
+  color: #0abf53;
+  font-size: 13px;
+  font-weight: 600px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  background-color: rgb(9 191 83 / 12%);
+  border-radius: 6px;
+  padding: 6px 12px;
+  padding-top: 6px;
+  width: fit-content;
+}
+
+.payment-bio p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.payment-bio h4{
+  color: #0abf53;
 }
