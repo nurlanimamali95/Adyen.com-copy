@@ -317,11 +317,76 @@ article li p {
   margin-left: 30px;
 }
 
-/* END SECTION AND FOOTER */
+/* The last part and footer */
 
-section .end div {
-  width: 100%0;
+.logos ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.explore {
+  margin-top: 30px;
+  max-width: 100%;
   height: 300px;
   background-color: #0abf53;
+}
+
+.explore h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 58px;
   text-align: center;
+  padding-top: 150px;
+}
+
+.explore p {
+  text-align: center;
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 430px;
+  background-color: #00112c;
+  color: white;
+  padding-top: 100px;
+}
+
+footer li {
+  list-style: none;
+}
+
+.inputsubmit {
+  margin-right: 100px;
+}
+
+.input {
+  display: flex;
+  margin-top: 30px;
+}
+
+input {
+  height: 50px;
+  width: 318px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #fff;
+  color: #00112c;
 }
