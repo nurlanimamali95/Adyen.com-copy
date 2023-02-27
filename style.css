@@ -151,6 +151,7 @@ article li p {
 .payment {
   display: flex;
   gap: 100px;
+  background-color: #f8fafb;
 }
 
 .payment-bio {
@@ -201,6 +202,7 @@ article li p {
 .data {
   margin-top: 150px;
   text-align: center;
+  background-color: #f8fafb;
 }
 
 .data-green {
@@ -242,4 +244,84 @@ article li p {
 .data span {
   text-decoration: underline;
   color: #0abf53;
+}
+
+/* FINANCE SECTION */
+
+.finance {
+  display: flex;
+  margin-top: 150px;
+}
+
+.finance img {
+  width: 100%;
+  height: 100%;
+}
+
+.finance .info {
+  width: 100%;
+  height: 100%;
+}
+
+.info-header {
+  color: #0abf53;
+  font-size: 13px;
+  font-weight: 600px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: rgb(9 191 83 / 12%);
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: fit-content;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.info h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  width: 500px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.info-bio {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 40px;
+  padding-top: 24px;
+  padding-left: 30px;
+  color: #00112c;
+  width: 600px;
+  margin-bottom: 60px;
+}
+
+.financeicon {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.info-bio-1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.info-footer {
+  color: #0abf53;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+
+/* END SECTION AND FOOTER */
+
+section .end div {
+  width: 100%0;
+  height: 300px;
+  background-color: #0abf53;
+  text-align: center;
 }
