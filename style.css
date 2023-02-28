@@ -9,7 +9,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
   height: 64px;
   font-size: 16px;
   padding: 0 24px;
@@ -18,11 +17,16 @@ header {
 
 .logo a svg {
   fill: #0abf53;
+  width: 220px;
+  padding-right: 100px;
+}
+
+.popupnav {
+  display: none;
 }
 
 header nav {
   flex-grow: 1;
-  margin-left: 50px;
 }
 
 header nav ul,
@@ -31,8 +35,22 @@ header nav ul,
   list-style: none;
 }
 
-li {
+.login,
+.iconsearch {
   padding: 10px;
+}
+
+header nav ul li {
+  padding-left: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+/* I wanted to add border top to the top of the page as it is on original website, however i could not. Would be great if you help me with that. Line 47 */
+
+header nav ul li:hover {
+  border-top: 3px solid #0abf53;
 }
 
 #contactus {
@@ -42,8 +60,12 @@ li {
   color: white;
   text-align: center;
   padding: 12px 24px;
+  cursor: pointer;
 }
 
+#contactus:hover {
+  background-color: #078f3e;
+}
 /* MAIN */
 
 main {
@@ -90,8 +112,12 @@ video {
   margin-left: 30px;
   margin-top: 50px;
   text-align: center;
+  cursor: pointer;
 }
 
+.bio-contact:hover {
+  background-color: #078f3e;
+}
 /* BRANDS LOGO */
 
 .brands ul {
@@ -117,7 +143,7 @@ article {
 article div ul {
   display: flex;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 30px;
   list-style-type: none;
 }
 
@@ -144,6 +170,16 @@ article li p {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.article-icons-green {
+  color: #0abf53;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.article-icons-green:hover {
+  text-decoration: none;
 }
 
 /* PAYMENT SECTION */
@@ -195,6 +231,11 @@ article li p {
 
 .payment-bio h4 {
   color: #0abf53;
+  cursor: pointer;
+}
+
+.payment-bio h4:hover {
+  text-decoration: underline;
 }
 
 /* DATA SECTION */
@@ -244,6 +285,11 @@ article li p {
 .data span {
   text-decoration: underline;
   color: #0abf53;
+  cursor: pointer;
+}
+
+.data span:hover {
+  text-decoration: none;
 }
 
 /* FINANCE SECTION */
@@ -315,6 +361,11 @@ article li p {
   color: #0abf53;
   font-weight: bolder;
   margin-left: 30px;
+  cursor: pointer;
+}
+
+.info-footer:hover {
+  text-decoration: underline;
 }
 
 /* The last part and footer */
@@ -338,7 +389,8 @@ article li p {
   font-weight: 600;
   line-height: 58px;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 120px;
+  color: white;
 }
 
 .explore p {
@@ -348,6 +400,12 @@ article li p {
   margin: auto;
   padding: 10px 15px;
   border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.explore p:hover {
+  background-color: #e6e6e6;
 }
 
 footer {
@@ -363,6 +421,7 @@ footer {
 
 footer li {
   list-style: none;
+  padding: 10px;
 }
 
 .inputsubmit {
@@ -402,6 +461,7 @@ button {
 
 footer span {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #email {
@@ -415,6 +475,13 @@ footer span {
 
 .socialbuttons li svg {
   width: 30px;
+  cursor: pointer;
+}
+
+.socialbuttons li svg:hover {
+  width: 40px;
+  background: black;
+  border: 1px solid black;
 }
 
 .copyright {
@@ -443,4 +510,321 @@ footer span {
 .copyright .global {
   padding-left: 10px;
   padding-top: 50px;
+  cursor: pointer;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+  /* HEADER */
+
+  * {
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  header nav,
+  .login {
+    display: none;
+  }
+
+  .logo a svg {
+    position: relative;
+    left: 20px;
+  }
+
+  header {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+
+  main h1 {
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 50px;
+    padding-left: 30px;
+  }
+
+  .bio-contact {
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+  }
+
+  video {
+    margin: 0;
+    padding: 0;
+    border-radius: 40px;
+    padding: 20px;
+  }
+
+  article {
+    height: auto;
+  }
+
+  article h2 {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: px;
+    margin-bottom: 48px;
+    max-width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+  }
+
+  article li img {
+    width: 24px;
+  }
+
+  .finance img {
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  .payment {
+    gap: 0;
+  }
+
+  .payment-bio {
+    margin-top: 80px;
+  }
+
+  .payment-bio h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+  }
+
+  .data {
+    margin-top: 200px;
+  }
+
+  .data h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+  }
+
+  .data .data-info {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .data img {
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  .info-header {
+    margin-top: 30px;
+  }
+
+  .info h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+    padding: auto;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .info-footer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  footer li {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .inputsubmit {
+    display: none;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* TABLET DESIGN */
+
+@media (min-width: 601px) and (max-width: 1248px) {
+  * {
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  header nav,
+  .login {
+    display: none;
+  }
+
+  .logo a svg {
+    position: relative;
+    left: 20px;
+  }
+
+  header {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+
+  main h1 {
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 50px;
+    padding-left: 30px;
+  }
+
+  .main {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .bio-contact {
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+  }
+
+  video {
+    margin: 0;
+    padding: 0;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 90px;
+  }
+
+  article {
+    height: auto;
+  }
+
+  article h2 {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: px;
+    margin-bottom: 48px;
+    max-width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+  }
+
+  article li img {
+    width: 24px;
+  }
+
+  .finance img {
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .finance .info {
+    width: 50%;
+  }
+
+  .payment {
+    gap: 0;
+  }
+
+  .payment-bio {
+    margin-top: 80px;
+  }
+
+  .payment-bio h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+  }
+
+  .data {
+    margin-top: 200px;
+  }
+
+  .data h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+  }
+
+  .data .data-info {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .data img {
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  .info-header {
+    margin-top: 30px;
+  }
+
+  .info h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 42px;
+    padding: auto;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .info-footer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  footer li {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .inputsubmit {
+    display: none;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+  }
 }
