@@ -353,10 +353,12 @@ article li p {
 footer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   height: 430px;
   background-color: #00112c;
   color: white;
   padding-top: 100px;
+  border-bottom: 1px solid grey;
 }
 
 footer li {
@@ -369,24 +371,76 @@ footer li {
 
 .input {
   display: flex;
+  flex-wrap: nowrap;
   margin-top: 30px;
 }
 
 input {
   height: 50px;
-  width: 318px;
+  width: 300px;
   font-size: 16px;
   line-height: 26px;
+  border-color: #d81b4a;
+  background-color: transparent;
 }
 
 button {
   width: 50px;
   height: 50px;
-  margin: 0;
-  padding: 0;
+  margin-left: 0;
+  padding-left: 0;
   border: 1px solid white;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   background-color: #fff;
   color: #00112c;
+}
+
+.input ul {
+  width: 380px;
+}
+
+footer span {
+  text-decoration: underline;
+}
+
+#email {
+  color: white;
+  padding-left: 10px;
+}
+
+.socialbuttons {
+  display: flex;
+}
+
+.socialbuttons li svg {
+  width: 30px;
+}
+
+.copyright {
+  background-color: #00112c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.copyright .privacy {
+  flex: 2;
+  padding-left: 30px;
+  padding-top: 50px;
+  color: #a5afbd;
+  font-size: 13px;
+}
+
+.copyright .iconarrow {
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+
+.copyright .iconworld,
+.copyright .global {
+  padding-left: 10px;
+  padding-top: 50px;
 }
