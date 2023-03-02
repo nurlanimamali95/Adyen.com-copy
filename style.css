@@ -29,6 +29,24 @@ header nav {
   flex-grow: 1;
 }
 
+nav .navbar-toggler {
+  display: none;
+  margin-left: 110px;
+  right: 3px;
+  top: 3px;
+  height: min-content;
+  cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background: #0abf53;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
 header nav ul,
 .login ul {
   display: flex;
@@ -531,8 +549,15 @@ footer span {
     height: auto;
   }
 
-  header nav,
   .login {
+    display: none;
+  }
+
+  header nav .navbar-toggler {
+    display: grid;
+  }
+
+  nav ul li {
     display: none;
   }
 
@@ -675,6 +700,7 @@ footer span {
     height: auto;
     padding-right: 0;
     margin-right: 0;
+    overflow: hidden;
   }
 
   img {
@@ -682,20 +708,29 @@ footer span {
     height: auto;
   }
 
-  header nav,
+  .logo a svg {
+    position: relative;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav {
+    flex-grow: 0;
+  }
+
   .login {
     display: none;
   }
 
-  .logo a svg {
-    position: relative;
-    left: 20px;
+  header nav .navbar-toggler {
+    display: grid;
   }
 
-  header {
-    padding: 0;
-    margin: 0;
-    position: absolute;
+  nav ul li {
+    display: none;
   }
 
   main h1 {
