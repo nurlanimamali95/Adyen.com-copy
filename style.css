@@ -17,7 +17,7 @@ header {
 
 .logo a svg {
   fill: #0abf53;
-  width: 220px;
+  min-width: 220px;
   padding-right: 100px;
 }
 
@@ -29,22 +29,21 @@ header nav {
   flex-grow: 1;
 }
 
-nav .navbar-toggler {
+.navbar-toggler {
   display: none;
-  margin-left: 110px;
-  right: 3px;
-  top: 3px;
+  margin-left: 20rem;
   height: min-content;
   cursor: pointer;
 }
 
-nav .navbar-toggler .bar {
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background: #0abf53;
-  border-radius: 10px;
-  transition: 0.4s;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #0abf53;
 }
 
 header nav ul,
@@ -553,13 +552,45 @@ footer span {
     display: none;
   }
 
-  header nav .navbar-toggler {
-    display: grid;
+  .navbar-toggler {
+    display: block;
   }
 
-  nav ul li {
-    display: none;
+  .navbar-toggler.active .bar:nth-child(2) {
+    opacity: 0;
   }
+
+  .navbar-toggler.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggler.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  header nav ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  header nav ul li {
+    margin: 16px 0;
+  }
+
+  header nav ul.active {
+    left: 0;
+  }
+
+  /* nav ul li {
+    display: grid;
+  } */
 
   .logo a svg {
     position: relative;
@@ -700,7 +731,6 @@ footer span {
     height: auto;
     padding-right: 0;
     margin-right: 0;
-    overflow: hidden;
   }
 
   img {
@@ -725,12 +755,40 @@ footer span {
     display: none;
   }
 
-  header nav .navbar-toggler {
-    display: grid;
+  .navbar-toggler {
+    display: block;
   }
 
-  nav ul li {
-    display: none;
+  .navbar-toggler.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggler.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggler.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  header nav ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  header nav ul li {
+    margin: 16px 0;
+  }
+
+  header nav ul.active {
+    left: 0;
   }
 
   main h1 {
