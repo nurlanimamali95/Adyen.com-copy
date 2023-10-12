@@ -1,6 +1,6 @@
 # Adyen.com-copy
 
-You can try out the live demo [here][https://example.com/demo](https://adyen-com-copy.vercel.app/).
+[Click here for the Demo version](https://adyen-com-copy.vercel.app/)
 
 ## Overview:
 This project is a recreation of the Adyen.com website using HTML, CSS, and basic JavaScript. It serves as a practice exercise to enhance web development skills and should not be used for any commercial or unauthorized purposes.
